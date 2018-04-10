@@ -7,17 +7,17 @@
   
   <title>Wainwell&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="javaScript 异步编程基础 date: 2018-04-10 21:40:37 作者： wainwell 本文主要讲JavaScript的异步编程基础，主要是从以下几点逐渐展开  Promise Iterator Generator Async/Await  ##Promise ###所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一">
+  <meta name="description" content="javaScript 异步编程基础 date: 2018-04-10 21:40:37 作者： wainwell 本文主要讲JavaScript的异步编程基础，主要是从以下几点逐渐展开  Promise Iterator Generator Async/Await  Promise所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一个异步操作）是">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Wainwell&#39;s blog">
 <meta property="og:url" content="http://yoursite.com/2018/04/10/hello-world/index.html">
 <meta property="og:site_name" content="Wainwell&#39;s blog">
-<meta property="og:description" content="javaScript 异步编程基础 date: 2018-04-10 21:40:37 作者： wainwell 本文主要讲JavaScript的异步编程基础，主要是从以下几点逐渐展开  Promise Iterator Generator Async/Await  ##Promise ###所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一">
+<meta property="og:description" content="javaScript 异步编程基础 date: 2018-04-10 21:40:37 作者： wainwell 本文主要讲JavaScript的异步编程基础，主要是从以下几点逐渐展开  Promise Iterator Generator Async/Await  Promise所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一个异步操作）是">
 <meta property="og:locale" content="汉语">
-<meta property="og:updated_time" content="2018-04-10T14:58:36.000Z">
+<meta property="og:updated_time" content="2018-04-10T15:21:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Wainwell&#39;s blog">
-<meta name="twitter:description" content="javaScript 异步编程基础 date: 2018-04-10 21:40:37 作者： wainwell 本文主要讲JavaScript的异步编程基础，主要是从以下几点逐渐展开  Promise Iterator Generator Async/Await  ##Promise ###所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一">
+<meta name="twitter:description" content="javaScript 异步编程基础 date: 2018-04-10 21:40:37 作者： wainwell 本文主要讲JavaScript的异步编程基础，主要是从以下几点逐渐展开  Promise Iterator Generator Async/Await  Promise所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一个异步操作）是">
   
     <link rel="alternate" href="/atom.xml" title="Wainwell&#39;s blog" type="application/atom+xml">
   
@@ -67,7 +67,7 @@
         <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/10/hello-world/" class="article-date">
-  <time datetime="2018-04-10T13:59:45.000Z" itemprop="datePublished">2018-04-10</time>
+  <time datetime="2018-04-10T15:02:00.000Z" itemprop="datePublished">2018-04-10</time>
 </a>
     
   </div>
@@ -76,8 +76,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h1 id="javaScript-异步编程基础"><a href="#javaScript-异步编程基础" class="headerlink" title="javaScript 异步编程基础"></a>javaScript 异步编程基础</h1><hr>
+        <h1 id="javaScript-异步编程基础"><a href="#javaScript-异步编程基础" class="headerlink" title="javaScript 异步编程基础"></a>javaScript 异步编程基础</h1><hr>
 <p>date: 2018-04-10 21:40:37</p>
 <p>作者： wainwell</p>
 <p>本文主要讲JavaScript的异步编程基础，主要是从以下几点逐渐展开</p>
@@ -87,8 +86,7 @@
 <li>Generator</li>
 <li>Async/Await</li>
 </ul>
-<p>##Promise</p>
-<p>###所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一个异步操作）是ES6中新加的一个很重要的语法。<br>Promise一共有三种状态：</p>
+<h2 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h2><h2 id="所谓-Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一个异步操作）是ES6中新加的一个很重要的语法。"><a href="#所谓-Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一个异步操作）是ES6中新加的一个很重要的语法。" class="headerlink" title="所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一个异步操作）是ES6中新加的一个很重要的语法。"></a>所谓 Promise，就是一个对象，用来传递异步操作的消息。它代表了某个未来才会知道结果的事件（通常是一个异步操作）是ES6中新加的一个很重要的语法。</h2><p>Promise一共有三种状态：</p>
 <ul>
 <li>Pending</li>
 <li>Resolved</li>
@@ -96,9 +94,15 @@
 </ul>
 <p>Promise就是一个从Pending切换到Resolved或者Rejected状态的一个对象，Pending是起始状态，代表刚开始的一个状态，Resolved代表状态变成成功状态，常用于网络状态的请求成功，Rejected代表状态变成异常状态，进入异常的逻辑，常用语网络请求进入异常。</p>
 <p>Promise的状态具有不可逆性，一旦确定便不会被改变，也不会受外界影响，Promise主要可以有效地缓解回调地狱的问题，可以将异步的代码写成同步的方式。</p>
-<p>####Promise基本用法<br>Promise对象是一个构造函数，可以生成promise实例。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">promise</span>(<span class="params">ms, isTrue</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (isTrue) &#123;</span><br><span class="line">            setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                resolve(<span class="string">'dddd'</span>)</span><br><span class="line">            &#125;, ms);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            reject(&#123;<span class="attr">message</span>: <span class="string">'reject'</span>&#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h4 id="Promise基本用法"><a href="#Promise基本用法" class="headerlink" title="Promise基本用法"></a>Promise基本用法</h4><p>Promise对象是一个构造函数，可以生成promise实例。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createPromise</span>(<span class="params">ms</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            resolve(<span class="string">'resolve'</span>)</span><br><span class="line">        &#125;, ms);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面代码生成了一个Promise实例，表示过上一段时间就进入resolved状态，但是也可以进入rejected状态，然后就会触发then方法里面绑定的回调函数。这里不论是进入resolve还是reject都会进入then的回调函数。参数也会带到then的回调里面。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> testPromise = createPromise(<span class="number">100</span>);</span><br><span class="line">testPromise.then(<span class="function">(<span class="params">value</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>这里通过调用createPromise生成了一个promise，给这个promise制定了then回调，接着会进入resove状态，然后等100ms之后会执行then的回调，value是‘resolve’，从而输出‘resolve‘。</p>
+<p>下面是自己通过ES5手动实现一个promise，虽然比较简陋，但是能说明promise的运行原理。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">selfPromise</span>(<span class="params">callBack</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.then = <span class="function"><span class="keyword">function</span> (<span class="params">fn</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.thenCallBack = fn;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">this</span>.resolve = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.thenCallBack)&#123;</span><br><span class="line">            <span class="keyword">this</span>.thenCallBack([...arguments]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;).bind(<span class="keyword">this</span>);</span><br><span class="line">    <span class="keyword">this</span>.reject = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;;</span><br><span class="line">    callBack(<span class="keyword">this</span>.resolve,<span class="keyword">this</span>.reject);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里没有处理rejected状态和其他api，听过传入一个回调函数，传出resolve和reject方法，在resolve里面去掉用then的回调函数，并将参数全部传出去。用法和上面一样，就不多赘述了。</p>
+<h3 id="Promise-all"><a href="#Promise-all" class="headerlink" title="Promise.all()"></a>Promise.all()</h3>
       
     </div>
     <footer class="article-footer">
@@ -111,15 +115,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/04/10/node/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
+    <a href="/2018/04/07/node/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">node</div>
+    </a>
   
 </nav>
 
@@ -155,11 +155,11 @@
       <ul>
         
           <li>
-            <a href="/2018/04/10/node/">(no title)</a>
+            <a href="/2018/04/10/hello-world/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2018/04/10/hello-world/">(no title)</a>
+            <a href="/2018/04/07/node/">node</a>
           </li>
         
       </ul>
